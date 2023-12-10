@@ -1,0 +1,39 @@
+<html lang="en" dir="ltr">
+
+<head>
+	<meta charset="utf-8">
+	<title>Organic Product Purchase Predictor</title>
+	<link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='resultnew.css') }}">
+	<script src="https://kit.fontawesome.com/5f3f547070.js" crossorigin="anonymous"></script>
+	<link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+
+	<!-- Website Title -->
+	<div class="container">
+		<h2 class='container-heading'><span class="heading_font">Organic Product Purchase Predictor</span></h2>
+		<div class='description'>
+			<p>A Machine Learning Web App, Built with Flask</p>
+		</div>
+	</div>
+
+	<!-- Result -->
+	<div class="results">
+		{% if prediction==0 %}
+		<h1>Prediction: <span class='danger'>Oops! User is Not Going to Buy Our Organic Products.</span></h1>
+		<img class="gif" src="../static/images/failure.webp" alt="Diabetes Image">
+		{% elif prediction==1 %}
+		<h1>Prediction: <span class='safe'>Great! User Going to Buy Our Organic Products</span></h1>
+		<img class="gif1" src="../static/images/success.webp" alt="Not Diabetes Image">
+		{% endif %}
+		<div>
+			<button onclick="window.location.href='{{ url_for('predict_datapoint') }}'" class="back-button">Back</button>
+		</div>
+		
+	</div>
+
+</body>
+
+</html>

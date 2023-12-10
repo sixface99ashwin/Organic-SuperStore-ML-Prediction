@@ -21,7 +21,7 @@ from src.utils import save_object, evaluate_models
 
 @dataclass
 class ModelTrainerConfig:
-    trained_model_file_path = os.path.join("artifacts", "model.joblib")
+    trained_model_file_path = os.path.join("artifacts", "model.pkl")
 
 class ModelTrainer:
     def __init__(self):
@@ -36,6 +36,7 @@ class ModelTrainer:
                 test_array[:, :-1],
                 test_array[:, -1]
             )
+            
 
             models = {
                 "Random Forest": RandomForestClassifier(),

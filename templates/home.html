@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='homenew.css') }}">
+    <title>Organic Product Purchase Predictor</title>
+</head>
+
+<body>
+    <div class="container">
+		<h2 class='container-heading'><span class="heading_font">Organic Product Purchase Predictor</span></h2>
+		<div class='description'>
+			<p>A Machine Learning Web App, Built with Flask</p>
+		</div>
+	</div>
+    </div>
+    <div class="ml-container">
+        <form action="{{ url_for('predict_datapoint')}}" method="post">
+            <!-- Simplified form structure -->
+            <div class="form-group">
+                <label for="gender">Gender</label>
+                <select class="form-control" id="gender" name="gender" required>
+                    <option value="" disabled selected>Please select below option</option>
+                    <option value="M">Male</option>
+                    <option value="F">Female</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="geographic_region">Geographic Region</label>
+                <select class="form-control" id="geographic_region" name="geographic_region" required>
+                    <option value="" disabled selected>Please select below option</option>
+                    <option value="Midlands">Midlands</option>
+                    <option value="North">North</option>
+                    <option value="South East">South East</option>
+                    <option value="South West">South West</option>
+                    <option value="Scottish">Scottish</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="loyalty_status">Loyalty Status</label>
+                <select class="form-control" id="loyalty_status" name="loyalty_status" required>
+                    <option value="" disabled selected>Please select below option</option>
+                    <option value="Silver">Silver</option>
+                    <option value="Tin">Tin</option>
+                    <option value="Gold">Gold</option>
+                    <option value="Platinum">Platinum</option>
+
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="neighborhood_cluster">Neighborhood Cluster-7 Level</label>
+                <select class="form-control" id="neighborhood_cluster" name="neighborhood_cluster" required>
+                    <option value="" disabled selected>Please select below option</option>
+                    <option value="A">A</option>
+                    <option value="B">B</option>
+                    <option value="C">C</option>
+                    <option value="D">D</option>
+                    <option value="E">E</option>
+                    <option value="F">F</option>
+                    <option value="U">U</option>
+
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="affluence_grade">Affluence Grade</label>
+                <input class="form-control" type="number" id="affluence_grade" name="affluence_grade" min="1" max="34"
+                    placeholder="Enter your Affluence Grade" min='0' required />
+                
+            </div>
+            <div class="form-group">
+                <label for="age">Age</label>
+                <input class="form-control" type="number" id="age" name="age" placeholder="Enter your Age"
+                    min='0' required />
+            </div>
+            <div class="form-group">
+                <label for="loyalty_card_tenure">Loyalty Card Tenure</label>
+                <input class="form-control" type="number" id="loyalty_card_tenure" min="1" max="39"
+                    name="loyalty_card_tenure" placeholder="Enter your Loyalty Card Tenure" min='0'
+                    required />
+                
+            </div>
+
+            <div class="d-grid">
+                <button class="btn btn-primary btn-lg" id="submitButton" type="submit">Predict</button>
+            </div>
+        </form>
+    </div>
+
+
+</body>
+
+</html>
