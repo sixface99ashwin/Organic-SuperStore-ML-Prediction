@@ -3,7 +3,10 @@ import numpy as np
 import pandas as pd
 from flask_bootstrap import Bootstrap
 
+from firebase_admin import credentials, initialize_app
 
+cred = credentials.ApplicationDefault()
+initialize_app(cred, {'projectId': 'organicstoremlpredictor'})
 
 app = Flask(__name__,static_url_path='/static', static_folder='static')
 
