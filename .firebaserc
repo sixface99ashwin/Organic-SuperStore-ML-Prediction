@@ -1,5 +1,8 @@
 {
   "projects": {
-    "default": "organicstoremlpredictor"
-  }
+    "default": "organic-store-ml-predictor",
+    "production": "organic-store-ml-predictor"
+  },
+  "targets": {},
+  "etags": {}
 }
