@@ -8,14 +8,14 @@ from firebase_admin import credentials, initialize_app
 cred = credentials.ApplicationDefault()
 initialize_app(cred, {'projectId': 'organicstoremlpredictor'})
 
-app = Flask(__name__,static_url_path='/static', static_folder='static')
+app = Flask(__name__,static_url_path='/static', static_folder='/static')
 
 
 @app.route('/', methods=['GET', 'POST'])
 def predict_datapoint():
     from src.pipeline.predict_pipeline import CustomData,PredictPipeline
     if request.method == 'GET':
-        return render_template('home.html')
+        return render_template('index.html')
     else:
         
         data = CustomData(
