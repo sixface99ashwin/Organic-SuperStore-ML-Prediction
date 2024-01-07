@@ -10,32 +10,32 @@ This project aims to predict whether a user will purchase an organic product bas
 ## About the Data
 
 1. Gender:
-    Data Type: Object
-    Insight: Records the gender of customers, offering insights into gender-specific purchasing patterns and preferences.
+    - Data Type: Object
+    - Insight: Records the gender of customers, offering insights into gender-specific purchasing patterns and preferences.
 2. Geographic Region:
-    Data Type: Object
-    Insight: Captures the regional location of customers, enabling analysis of regional variations in buying behavior and product preferences.
+    - Data Type: Object
+    - Insight: Captures the regional location of customers, enabling analysis of regional variations in buying behavior and product preferences.
 3. Loyalty Status:
-    Data Type: Object
-    Insight: Indicates the loyalty tier of customers within the store's program, potentially influencing purchase frequency and brand loyalty.
+    - Data Type: Object
+    - Insight: Indicates the loyalty tier of customers within the store's program, potentially influencing purchase frequency and   brand loyalty.
 4. Neighborhood Cluster-55 Level:
-    Data Type: Float64
-    Insight: Assigns customers to specific neighborhood clusters, aiding in localized marketing strategies and understanding community preferences.
+    - Data Type: Float64
+    - Insight: Assigns customers to specific neighborhood clusters, aiding in localized marketing strategies and understanding community preferences.
 5. Neighborhood Cluster-7 Level:
-    Data Type: Object
-    Insight: Categorizes customers into broader neighborhood clusters, providing a macro view of community characteristics and potential market segments.
+    - Data Type: Object
+    - Insight: Categorizes customers into broader neighborhood clusters, providing a macro view of community characteristics and potential market segments.
 6. Television Region:
-    Data Type: Object
-    Insight: Identifies the television viewing region for customers, offering insights into regional media consumption habits and advertising opportunities.
+    - Data Type: Object
+    - Insight: Identifies the television viewing region for customers, offering insights into regional media consumption habits and advertising opportunities.
 7. Affluence Grade:
-    Data Type: Int32
-    Insight: Assigns a grade reflecting the affluence level of customers, helping to tailor marketing efforts and product offerings to specific economic segments.
+    - Data Type: Int32
+    - Insight: Assigns a grade reflecting the affluence level of customers, helping to tailor marketing efforts and product offerings to specific economic segments.
 8. Age:
-    Data Type: Int32
-    Insight: Records the age demographics of customers, facilitating age-specific marketing strategies and understanding generational buying behaviors.
+    - Data Type: Int32
+    - Insight: Records the age demographics of customers, facilitating age-specific marketing strategies and understanding generational buying behaviors.
 9. Loyalty Card Tenure:
-    Data Type: Int32
-    Insight: Measures the longevity of customer participation in the loyalty program, indicating customer retention and long-term engagement levels with the store.
+    - Data Type: Int32
+    - Insight: Measures the longevity of customer participation in the loyalty program, indicating customer retention and long-term engagement levels with the store.
 
 
 ### Target variable: 
