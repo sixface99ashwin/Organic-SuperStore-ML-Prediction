@@ -44,35 +44,22 @@ This project aims to predict whether a user will purchase an organic product bas
 
 Dataset Source Link : [https://www.kaggle.com/datasets/papercool/organics-purchase-indicator]
 
-To understand about the feature engineering and model prediction for this particular dataset please refer to the following: </br>
-Kaggle Notebook : [https://www.kaggle.com/code/rajarshiroy0123/indian-house-price-prediction](https://www.kaggle.com/code/rajarshiroy0123/indian-house-price-prediction)
+
 
 
 ## Table of Contents
 
-- [My Sweet Home - House Price Prediction \& Recommendation Project](#my-sweet-home---house-price-prediction--recommendation-project)
+- [Organic Product Purchace Prediction Project]
+(#Organic Product Purchace Prediction Project)
   - [About The Project](#about-the-project)
   - [About the Data](#about-the-data)
     - [Target variable:](#target-variable)
   - [Table of Contents](#table-of-contents)
-  - [Images](#images)
   - [Installation and Dependencies](#installation-and-dependencies)
   - [Working Directory](#working-directory)
   - [Working with the code](#working-with-the-code)
-  - [Usage](#usage)
   - [Contributing](#contributing)
   - [Contact](#contact)
-  - [License](#license)
-  - [Reference](#reference)
-
-## Images 
-
-Inputing Features :
-![image](https://github.com/Rajarshi12321/Housing_predict_recommend/assets/94736350/2a1f9fff-bf1e-4533-9090-58db6502445d)
-
-Predicted and recommended Output :
-![image](https://github.com/Rajarshi12321/Housing_predict_recommend/assets/94736350/60bed2a5-52cc-4c9f-acad-421acf0db3b2)
-
 
 
 ## Installation and Dependencies
@@ -88,14 +75,6 @@ These are some required packages for our program which are mentioned in the Requ
 - xgboost
 - Flask
 - dill
-- requests
-- beautifulsoup4
-- bs4
-- jinja2
-- joblib
-- librosa
-- lxml
-
 
 
 
@@ -158,7 +137,7 @@ To run this project locally, please follow these steps:-
 1. Clone the repository:
 
    ```shell
-   git clone https://github.com/Rajarshi12321/My-Sweet-Home.git
+   git clone https://github.com/sixface99ashwin/Organic-SuperStore-ML-Prediction.git
    ```
 
 
