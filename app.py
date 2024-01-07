@@ -1,14 +1,9 @@
 from flask import Flask,request,render_template,jsonify
 import numpy as np
 import pandas as pd
-from flask_bootstrap import Bootstrap
 
-from firebase_admin import credentials, initialize_app
 
-cred = credentials.ApplicationDefault()
-initialize_app(cred, {'projectId': 'organicstoremlpredictor'})
-
-app = Flask(__name__,static_url_path='/static', static_folder='/static')
+app = Flask(__name__)
 
 
 @app.route('/', methods=['GET', 'POST'])
@@ -46,4 +41,4 @@ def predict_datapoint():
 
 # main driver function
 if __name__ == '__main__':
-    app.run(host='0.0.0.0', port=8080, debug=True)
+    app.run(debug=True)
